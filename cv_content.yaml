@@ -57,15 +57,13 @@ experience:
     period: "2022 – aujourd’hui / Present"
     details:
       fr:
-        - "Conception et déploiement de modèles prédictifs (lead scoring, churn, recommandation)."
-        - "Industrialisation de workflows (LLM/NLP, enrichissement CRM, ingestion open data)."
-        - "Mise en place de pratiques MLOps : CI/CD, déploiement, monitoring et maintenance."
-        - "Collaboration étroite avec les équipes métier, IT et R&D."
+        - "Modèles prédictifs (lead scoring, churn, reco)."
+        - "Workflows industrialisés (LLM/NLP, open data, CRM)."
+        - "Pratiques MLOps : CI/CD, déploiement, monitoring."
       en:
-        - "Designed and deployed predictive models (lead scoring, churn, recommendation)."
-        - "Industrialized workflows (LLM/NLP, CRM enrichment, open data ingestion)."
-        - "Implemented MLOps practices: CI/CD, deployment, monitoring, maintenance."
-        - "Worked closely with business stakeholders, IT, and R&D."
+        - "Predictive models (lead scoring, churn, recommender)."
+        - "Industrialized workflows (LLM/NLP, open data, CRM)."
+        - "MLOps practices: CI/CD, deployment, monitoring."
 
   - company: "Cegid"
     role:
@@ -74,15 +72,13 @@ experience:
     period: "2020 – 2022"
     details:
       fr:
-        - "Management d’une équipe transversale de 4 personnes (data science & CRM)."
-        - "Développement de modèles prédictifs (churn, segmentation, insights clients)."
-        - "Pilotage de projets CRM et structuration des workflows."
-        - "Alignement des analyses data avec la stratégie marketing, gestion du budget."
+        - "Management d’une équipe data/CRM (4 pers.)."
+        - "Modèles prédictifs pour performance marketing."
+        - "Pilotage CRM et alignement avec stratégie."
       en:
-        - "Led a cross-functional team of 4 (data science & CRM)."
-        - "Developed predictive models (churn, segmentation, customer insights)."
-        - "Managed CRM projects and structured team workflows."
-        - "Aligned data insights with marketing strategy, accountable for budget."
+        - "Managed data/CRM team (4 ppl)."
+        - "Developed predictive models for marketing performance."
+        - "Led CRM projects, aligned with strategy."
 
   - company: "Cegid"
     role:
@@ -91,13 +87,11 @@ experience:
     period: "2019 – 2020"
     details:
       fr:
-        - "Élaboration de stratégies de tarification basées sur l’analytique avancée."
-        - "Combinaison d’analyses quantitatives, d’études marché et d’interviews experts."
-        - "Déploiement et suivi des offres en collaboration avec le top management."
+        - "Stratégies tarifaires basées sur data science."
+        - "Déploiement et suivi avec le top management."
       en:
-        - "Developed pricing strategies leveraging advanced analytics."
-        - "Combined quantitative insights, market surveys, and expert interviews."
-        - "Supported deployment and monitoring of offers with top management."
+        - "Data-driven pricing strategies."
+        - "Deployment and monitoring with top management."
 
   - company: "SNCF Connect & Tech"
     role:
@@ -106,30 +100,24 @@ experience:
     period: "2016 – 2018"
     details:
       fr:
-        - "Suivi de la performance commerciale sur les marchés européens (4Md€ de CA)."
-        - "Analyses financières, ventes et web analytics pour optimiser la performance."
-        - "Contribution au rebranding (oui.sncf) et à l’optimisation des flux de données."
+        - "Suivi de performance commerciale (4Md€)."
+        - "Analyses financières, ventes et web analytics."
       en:
-        - "Monitored business performance across European markets (€4B sales)."
-        - "Analyzed financial results, sales trends, and web analytics."
-        - "Contributed to the rebranding (oui.sncf) and optimized data flow management."
+        - "Monitored business performance (€4B)."
+        - "Analyzed sales, finance and web analytics."
 
   - company: "Disneyland Paris"
     role:
-      fr: "Pricing Analyst / Ingénieur Industriel"
-      en: "Pricing Analyst / Industrial Engineer"
+      fr: "Ingénieur Industriel / Pricing Analyst"
+      en: "Industrial Engineer / Pricing Analyst"
     period: "2010 – 2016"
     details:
       fr:
-        - "Conception et suivi de stratégies tarifaires pour les offres de transport."
-        - "Optimisation opérationnelle (restaurants, call center) via ingénierie industrielle."
-        - "Participation à un projet IT agile intégrant les besoins transport."
+        - "Optimisation opérationnelle, stratégies tarifaires transport"
         - "Encadrement (stagiaire, 50+ enquêteurs terrain)."
       en:
-        - "Designed and implemented pricing strategies for transportation offers."
-        - "Improved operations (restaurants, call center) through industrial engineering."
-        - "Contributed to large-scale IT project with Agile methodology."
-        - "Early management experience (intern, 50+ field data collectors)."
+        - "Operational optimization, pricing strategies."
+        - "Early management experience (intern, 50+ data collectors)."
 
 education:
   - school: "Toulouse INP-ENSIACET"
@@ -139,26 +127,20 @@ education:
     period: "2007 – 2010"
     details:
       fr:
-        - "Spécialisation en optimisation de processus, statistiques, SI"
-        - "Semestre d’échange à l’University of KwaZulu-Natal (logistique, supply chain, business ethics)"
+        - "Spécialisation en optimisation de processus, statistiques, SI."
+        - "Semestre d’échange (University of KwaZulu-Natal, logistique & supply chain)."
       en:
-        - "Focus on process optimization, statistics, information systems"
-        - "Exchange semester at University of KwaZulu-Natal (logistics, supply chain, business ethics)"
+        - "Specialization in process optimization, statistics, IS."
+        - "Exchange semester (University of KwaZulu-Natal, logistics & supply chain)."
 
   - school: "CNAM"
     degree:
-      fr: "Master 1 en Finance d’entreprise et Économie"
-      en: "Master 1 in Corporate Finance & Economics"
-    period: "2013 – 2015"
-    details:
-      fr: ["Cours du soir, spécialisation finance et marchés financiers"]
-      en: ["Evening classes, focus on corporate finance and financial markets"]
-
-  - school: "CNAM"
-    degree:
-      fr: "Licence en Commerce International & Développement"
-      en: "Bachelor in International Business & Development"
+      fr: "Cursus Finance & Économie (Licence + Master 1)"
+      en: "Finance & Economics track (Bachelor + Master 1)"
     period: "2012 – 2015"
+    details:
+      fr: ["Cours du soir, spécialisation économie et marchés financiers."]
+      en: ["Evening classes, focus on economics and financial markets."]
 
 
 hobbies:
