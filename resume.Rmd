@@ -6,6 +6,7 @@ params:
   lang: "en"   # default value
 output:
   pagedown::html_resume:
+    css: ["resume", "default-fonts", "specifics.css"]
     self_contained: true
 knit: pagedown::chrome_print
 ---
