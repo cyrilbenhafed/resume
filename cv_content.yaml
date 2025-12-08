@@ -16,6 +16,26 @@ summary:
     Combining technical skills with business insight, I deliver measurable large-scale impact.
 
 
+languages:
+  - language:
+      en: "French"
+      fr: "Français"
+    level:
+      en: "Native"
+      fr: "Langue maternelle"
+  - language:
+      en: "English"
+      fr: "Anglais"
+    level:
+      en: "Professional proficiency"
+      fr: "Professionnel"
+  - language:
+      en: "Spanish"
+      fr: "Espagnol"
+    level:
+      en: "Basic notions"
+      fr: "Notions"
+
 skills:
   programming:
     label:

@@ -28,9 +28,18 @@ Contact Info {#contact}
 --------------------------------------------------------------------------------
 
 - <i class="fa fa-envelope"></i> cyril@benhafed.com
+- <i class="fa fa-map-marker"></i> Lyon, France
 - <i class="fa fa-linkedin"></i> [linkedin.com/in/cyril-benhafed/](https://www.linkedin.com/in/cyril-benhafed/)
-- <i class="fa fa-github"></i> [github.com/cyrilb38](https://github.com/cyrilbenhafed)
+- <i class="fa fa-github"></i> [github.com/cyrilbenhafed](https://github.com/cyrilbenhafed)
 
+
+Languages {#languages}
+--------------------------------------------------------------------------------
+```{r, results='asis', echo=FALSE}
+for (l in cv$languages) {
+  cat('<span style="font-weight: bold;">', l$language[[lang]], ':</span> ', l$level[[lang]], '<br>\n')
+}
+```
 
 Skills {#skills}
 --------------------------------------------------------------------------------
@@ -44,14 +53,6 @@ for (s in names(cv$skills)) {
   cat(paste(items, collapse = ", "), "\n\n")
 }
 ```
-
-Disclaimer {#disclaimer}
---------------------------------------------------------------------------------
-
-This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
-
-Last updated on `r Sys.Date()`.
-
 
 
 Main
