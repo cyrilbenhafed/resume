@@ -27,9 +27,9 @@ Aside
 Contact Info {#contact}
 --------------------------------------------------------------------------------
 
-- <i class="fa fa-envelope"></i> cyril.benhafed@proton.me
+- <i class="fa fa-envelope"></i> cyril@benhafed.com
 - <i class="fa fa-linkedin"></i> [linkedin.com/in/cyril-benhafed/](https://www.linkedin.com/in/cyril-benhafed/)
-- <i class="fa fa-github"></i> [github.com/cyrilb38](https://github.com/cyrilb38)
+- <i class="fa fa-github"></i> [github.com/cyrilb38](https://github.com/cyrilbenhafed)
 
 
 Skills {#skills}
