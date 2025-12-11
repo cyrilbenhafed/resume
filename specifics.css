@@ -1,28 +1,41 @@
-
 @page {
   margin-top: 2cm;
   margin-right: 1cm;
   margin-bottom: 1cm;
   margin-left: 0.1cm; 
 }
-
 .section {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
-
 .titles h3 {
   margin-bottom: 0.2em;
 }
-
 .titles p {
   margin-top: 0;
   margin-bottom: 0.2em;
 }
-
 .aside {
   padding-top: 0;  
   margin-top: 0;
+  padding-left: 0.9cm;
+  padding-right: 0cm; 
+}
+
+.aside img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+.aside h2 {
+  text-align: center;
+}
+
+.aside ul,
+.aside p {
+  text-align: left; 
 }
 
 .aside > :first-child {
