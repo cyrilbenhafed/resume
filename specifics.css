@@ -47,3 +47,8 @@
   text-align: center;  
   margin-right: 0.3em;
 }
+
+#contact,
+#contact a {
+  color: #333;
+}
