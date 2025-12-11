@@ -41,3 +41,9 @@
 .aside > :first-child {
   margin-top: 0;  
 }
+
+#contact .fa {
+  width: 1.2em;  
+  text-align: center;  
+  margin-right: 0.3em;
+}
