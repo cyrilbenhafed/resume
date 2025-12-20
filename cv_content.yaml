@@ -1,20 +1,20 @@
 title:
-  fr: "Data Scientist Senior"
+  fr: "Senior Data Scientist"
   en: "Senior Data Scientist"
 
 summary:
   fr: >
-    Data Scientist senior, spécialisé en machine learning et MLOps. Expérimenté
-    dans la conception et le déploiement de modèles prédictifs (churn, segmentation,
-    recommandation) et dans l’industrialisation de workflows avec Databricks, Python/R
-    et CI/CD. Je combine expertise technique et vision business pour délivrer un impact
-    mesurable à grande échelle.
+    Senior Data Scientist spécialisé en machine learning et MLOps. 8+ ans d'expérience
+    en analytics et modélisation prédictive (churn, scoring, recommandation). Expert
+    en industrialisation de workflows (Databricks, CI/CD) avec focus sur l'impact
+    business mesurable. Expérience de management d'équipe data/CRM. Passionné par
+    la transmission de connaissances (open-source, mentorat).
   en: >
-    Senior Data Scientist with expertise in machine learning and MLOps. Experienced
-    in designing and deploying predictive models (churn, segmentation, recommender
-    systems) and industrializing workflows with Databricks, Python/R, and CI/CD.
-    Combining technical skills with business insight, I deliver measurable large-scale impact.
-
+    Senior Data Scientist specializing in machine learning and MLOps. 8+ years in
+    analytics and predictive modeling (churn, scoring, recommender systems). Expert
+    in workflow industrialization (Databricks, CI/CD) with focus on measurable business
+    impact. Previous data/CRM team management experience. Passionate about knowledge
+    sharing (open-source, mentoring).
 
 languages:
   - language:
@@ -47,11 +47,11 @@ skills:
 
   mlops:
     label:
-      fr: "MLOps"
-      en: "MLOps"
+      fr: "MLOps & Cloud"
+      en: "MLOps & Cloud"
     items:
-      fr: ["Databricks", "MLflow", "CI/CD", "APIs", "Git"]
-      en: ["Databricks", "MLflow", "CI/CD", "APIs", "Git"]
+      fr: ["Databricks (certif. en cours)", "MLflow", "CI/CD", "APIs", "Git"]
+      en: ["Databricks (certif. in progress)", "MLflow", "CI/CD", "APIs", "Git"]
 
   data_science:
     label:
@@ -66,8 +66,43 @@ skills:
       fr: "Business"
       en: "Business"
     items:
-      fr: ["Stratégie de tarification", "CRM & marketing analytics", "Management d’équipe"]
+      fr: ["Stratégie de tarification", "CRM & marketing analytics", "Management d'équipe"]
       en: ["Pricing strategy", "CRM & marketing analytics", "Team management"]
+
+certifications:
+  - name: "Professional Scrum Master I"
+    issuer: "Scrum.org"
+    year: "2023"
+  - name: "Databricks Certified Machine Learning Associate"
+    issuer: "Databricks"
+    year: "2025"
+    status:
+      fr: "(en cours)"
+      en: "(in progress)"
+
+teaching:
+  - type:
+      fr: "Interventions en école"
+      en: "School talks"
+    details:
+      fr: "Métiers de la tech, Fresque du Numérique"
+      en: "Tech careers, Digital Collage workshop"
+  - type:
+      fr: "Formations internes"
+      en: "Internal training"
+    details:
+      fr: "Programmation, bonnes pratiques DS/MLOps"
+      en: "Programming, DS/MLOps best practices"
+  - type:
+      fr: "Communauté"
+      en: "Community"
+    details:
+      fr: "Participant actif meetups data/tech (Lyon)"
+      en: "Active participant in data/tech meetups (Lyon)"
+
+interests:
+  fr: ["Contributeur OpenStreetMap", "Rallye humanitaire Maroc (4L Trophy)", "Randonnée & voyages"]
+  en: ["OpenStreetMap contributor", "Morocco charity rally (4L Trophy)", "Hiking & travel"]
 
 experience:
   - company: "Cegid"
@@ -77,13 +112,13 @@ experience:
     period: "2022 – Present"
     details:
       fr:
-        - "Modèles prédictifs (lead scoring, churn, reco)."
-        - "Workflows industrialisés (LLM/NLP, open data, CRM)."
-        - "Pratiques MLOps : CI/CD, déploiement, monitoring."
+        - "Conception et déploiement de modèles prédictifs (lead scoring, churn, recommandation) améliorant conversion et rétention."
+        - "Industrialisation end-to-end : workflows LLM/NLP, intégration open data, automatisation CRM (Databricks, MLflow)."
+        - "Implémentation bonnes pratiques MLOps : CI/CD, APIs, monitoring de performance."
       en:
-        - "Predictive models (lead scoring, churn, recommender)."
-        - "Industrialized workflows (LLM/NLP, open data, CRM)."
-        - "MLOps practices: CI/CD, deployment, monitoring."
+        - "Designed and deployed predictive models (lead scoring, churn, recommender) improving conversion and retention."
+        - "End-to-end industrialization: LLM/NLP workflows, open data integration, CRM automation (Databricks, MLflow)."
+        - "Implemented MLOps best practices: CI/CD, APIs, performance monitoring."
 
   - company: "Cegid"
     role:
@@ -92,13 +127,13 @@ experience:
     period: "2020 – 2022"
     details:
       fr:
-        - "Management d’une équipe data/CRM (4 pers.)."
-        - "Modèles prédictifs pour performance marketing."
-        - "Pilotage CRM et alignement avec stratégie."
+        - "Management d'une équipe data/CRM (4 personnes) : recrutement, montée en compétences, coordination projets."
+        - "Développement de modèles prédictifs pour optimisation marketing (ROI campagnes, scoring leads)."
+        - "Pilotage stratégique CRM et alignement avec direction marketing/ventes."
       en:
-        - "Managed data/CRM team (4 ppl)."
-        - "Developed predictive models for marketing performance."
-        - "Led CRM projects, aligned with strategy."
+        - "Managed data/CRM team (4 people): hiring, skills development, project coordination."
+        - "Built predictive models for marketing optimization (campaign ROI, lead scoring)."
+        - "Led strategic CRM initiatives, aligned with marketing/sales leadership."
 
   - company: "Cegid"
     role:
@@ -107,50 +142,52 @@ experience:
     period: "2019 – 2020"
     details:
       fr:
-        - "Stratégies tarifaires basées sur data science."
-        - "Déploiement et suivi avec le top management."
+        - "Stratégies tarifaires data-driven basées sur modélisation et analyses comportementales."
+        - "Déploiement et suivi avec le top management, impact direct sur revenus."
       en:
-        - "Data-driven pricing strategies."
-        - "Deployment and monitoring with top management."
+        - "Data-driven pricing strategies based on modeling and behavioral analysis."
+        - "Deployment and monitoring with top management, direct revenue impact."
 
   - company: "SNCF Connect & Tech"
     role:
-      fr: "Business Analyst"
-      en: "Business Analyst"
+      fr: "Business Analyst - Performance & Analytics"
+      en: "Business Analyst - Performance & Analytics"
     period: "2016 – 2018"
     details:
       fr:
-        - "Suivi de performance commerciale (4Md€)."
-        - "Analyses financières, ventes et web analytics."
+        - "Pilotage analytique d'un portefeuille commercial de 4Md€ (KPIs ventes, web analytics)."
+        - "Modélisation financière et analyses prédictives pour décisions stratégiques."
       en:
-        - "Monitored business performance (€4B)."
-        - "Analyzed sales, finance and web analytics."
+        - "Analytics lead for €4B commercial portfolio (sales KPIs, web analytics)."
+        - "Financial modeling and predictive analysis for strategic decisions."
 
   - company: "Disneyland Paris"
     role:
-      fr: "Ingénieur Industriel / Pricing Analyst"
-      en: "Industrial Engineer / Pricing Analyst"
+      fr: "Ingénieur Industriel - Analytics & Pricing"
+      en: "Industrial Engineer - Analytics & Pricing"
     period: "2010 – 2016"
     details:
       fr:
-        - "Optimisation opérationnelle, stratégies tarifaires transport"
-        - "Encadrement (stagiaire, 50+ enquêteurs terrain)."
+        - "Modèles prédictifs pour forecast opérationnel (centre d'appels) et optimisation pricing transport."
+        - "Automatisation data collection terrain (programmation Palm devices, 50+ enquêteurs)."
+        - "Analyses quantitatives pour décisions stratégiques pricing et optimisation opérationnelle."
       en:
-        - "Operational optimization, pricing strategies."
-        - "Early management experience (intern, 50+ data collectors)."
+        - "Predictive models for operational forecasting (call center) and transport pricing optimization."
+        - "Automated field data collection (Palm device programming, 50+ surveyors)."
+        - "Quantitative analysis supporting strategic pricing and operational optimization."
 
 education:
   - school: "Toulouse INP-ENSIACET"
     degree:
-      fr: "Diplôme d’ingénieur en Génie Industriel"
-      en: "Engineer’s degree in Industrial Engineering"
+      fr: "Diplôme d'ingénieur en Génie Industriel"
+      en: "Engineer's degree in Industrial Engineering"
     period: "2007 – 2010"
     details:
       fr:
-        - "Spécialisation en optimisation de processus, statistiques, SI."
-        - "Semestre d’échange (University of KwaZulu-Natal, logistique & supply chain)."
+        - "Spécialisation en optimisation de processus, statistiques, systèmes d'information."
+        - "Semestre d'échange (University of KwaZulu-Natal, logistique & supply chain)."
       en:
-        - "Specialization in process optimization, statistics, IS."
+        - "Specialization in process optimization, statistics, information systems."
         - "Exchange semester (University of KwaZulu-Natal, logistics & supply chain)."
 
   - school: "CNAM"
@@ -161,8 +198,3 @@ education:
     details:
       fr: ["Cours du soir, spécialisation économie et marchés financiers."]
       en: ["Evening classes, focus on economics and financial markets."]
-
-
-hobbies:
-  fr: ["Contributeur open-source", "Rallye humanitaire au Maroc", "Randonnée et voyages"]
-  en: ["Open-source contributor", "Charity rally in Morocco", "Hiking and traveling"]
