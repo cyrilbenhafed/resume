@@ -1,3 +1,26 @@
+section_titles:
+  contact:
+    fr: "Contact"
+    en: "Contact"
+  languages:
+    fr: "Langues"
+    en: "Languages"
+  skills:
+    fr: "Compétences"
+    en: "Skills"
+  certifications:
+    fr: "Certifications"
+    en: "Certifications"
+  teaching:
+    fr: "Enseignement"
+    en: "Teaching"
+  experience:
+    fr: "Expérience professionnelle"
+    en: "Professional Experience"
+  education:
+    fr: "Formation"
+    en: "Education"
+
 title:
   fr: "Senior Data Scientist"
   en: "Senior Data Scientist"
