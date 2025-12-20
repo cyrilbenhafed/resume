@@ -100,10 +100,6 @@ teaching:
       fr: "Participant actif meetups data/tech (Lyon)"
       en: "Active participant in data/tech meetups (Lyon)"
 
-interests:
-  fr: ["Contributeur OpenStreetMap", "Rallye humanitaire Maroc (4L Trophy)", "Randonnée & voyages"]
-  en: ["OpenStreetMap contributor", "Morocco charity rally (4L Trophy)", "Hiking & travel"]
-
 experience:
   - company: "Cegid"
     role:
