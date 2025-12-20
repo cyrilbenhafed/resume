@@ -114,7 +114,7 @@ experience:
       fr:
         - "Conception et déploiement de modèles prédictifs (lead scoring, churn, recommandation) améliorant conversion et rétention."
         - "Industrialisation end-to-end : workflows LLM/NLP, intégration open data, automatisation CRM (Databricks, MLflow)."
-        - "Implémentation bonnes pratiques MLOps : CI/CD, APIs, monitoring de performance."
+        - "Implémentation bonnes pratiques MLOps : CI/CD, APIs, monitoring..."
       en:
         - "Designed and deployed predictive models (lead scoring, churn, recommender) improving conversion and retention."
         - "End-to-end industrialization: LLM/NLP workflows, open data integration, CRM automation (Databricks, MLflow)."
@@ -128,11 +128,11 @@ experience:
     details:
       fr:
         - "Management d'une équipe data/CRM (4 personnes) : recrutement, montée en compétences, coordination projets."
-        - "Développement de modèles prédictifs pour optimisation marketing (ROI campagnes, scoring leads)."
+        - "Développement de modèles prédictifs pour optimisation marketing (churn, segmentation)."
         - "Pilotage stratégique CRM et alignement avec direction marketing/ventes."
       en:
         - "Managed data/CRM team (4 people): hiring, skills development, project coordination."
-        - "Built predictive models for marketing optimization (campaign ROI, lead scoring)."
+        - "Built predictive models for marketing optimization (churn, segmentation)."
         - "Led strategic CRM initiatives, aligned with marketing/sales leadership."
 
   - company: "Cegid"
@@ -169,11 +169,9 @@ experience:
     details:
       fr:
         - "Modèles prédictifs pour forecast opérationnel (centre d'appels) et optimisation pricing transport."
-        - "Automatisation data collection terrain (programmation Palm devices, 50+ enquêteurs)."
         - "Analyses quantitatives pour décisions stratégiques pricing et optimisation opérationnelle."
       en:
         - "Predictive models for operational forecasting (call center) and transport pricing optimization."
-        - "Automated field data collection (Palm device programming, 50+ surveyors)."
         - "Quantitative analysis supporting strategic pricing and operational optimization."
 
 education:

@@ -5,9 +5,20 @@
   margin-left: 0.1cm; 
 }
 
+#main {
+  margin-left: -0.3cm;
+  margin-right: 0cm;
+  padding-left: 0cm;
+  padding-right: 0cm;
+}
+
 .section {
   margin-top: 0.3em; 
   margin-bottom: 0.3em;  
+}
+
+.main-block.concise .details div:not(.concise) {
+  padding: 0;
 }
 
 .titles h3 {
@@ -81,11 +92,6 @@
 .main h3 {
   margin-top: 0.5em;
   margin-bottom: 0.2em;
-}
-
-.main ul {
-  margin-top: 0.3em;
-  margin-bottom: 0.5em;
 }
 
 .main li {
