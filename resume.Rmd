@@ -10,7 +10,6 @@ output:
     self_contained: true
 knit: pagedown::chrome_print
 ---
-
 ```{r setup, include=FALSE}
 library(yaml)
 cv <- yaml::read_yaml("cv_content.yaml")
@@ -20,11 +19,9 @@ lang <- params$lang
 Aside
 ================================================================================
 
-
 ![Cyril Benhafed](https://filedn.com/lv1BADwarvAYuD5Q5JTX7Kk/-%20Resources/Picture/markup_1000046689.jpg){width=80%}
 
-
-Contact Info {#contact}
+`r cv$section_titles$contact[[lang]]`  {#contact}
 --------------------------------------------------------------------------------
 
 - <i class="fa fa-envelope"></i> cyril@benhafed.com
@@ -32,8 +29,7 @@ Contact Info {#contact}
 - <i class="fa fa-linkedin"></i> [linkedin.com/in/cyril-benhafed/](https://www.linkedin.com/in/cyril-benhafed/)
 - <i class="fa fa-github"></i> [github.com/cyrilbenhafed](https://github.com/cyrilbenhafed)
 
-
-Languages {#languages}
+`r cv$section_titles$languages[[lang]]` {#languages}
 --------------------------------------------------------------------------------
 ```{r, results='asis', echo=FALSE}
 for (l in cv$languages) {
@@ -41,9 +37,8 @@ for (l in cv$languages) {
 }
 ```
 
-Skills {#skills}
+`r cv$section_titles$skills[[lang]]` {#skills}
 --------------------------------------------------------------------------------
-
 ```{r, results='asis', echo=FALSE}
 for (s in names(cv$skills)) {
   label <- cv$skills[[s]]$label[[lang]]
@@ -54,45 +49,57 @@ for (s in names(cv$skills)) {
 }
 ```
 
+`r cv$section_titles$certifications[[lang]]` {#certifications}
+--------------------------------------------------------------------------------
+```{r, results='asis', echo=FALSE}
+for (cert in cv$certifications) {
+  cert_line <- cert$name
+  
+  # Ajoute le statut (en cours) si présent
+  if (!is.null(cert$status)) {
+    cert_line <- paste0(cert_line, " ", cert$status[[lang]])
+  }
+  
+  cat(cert_line, "<br>\n")
+}
+```
+
+`r cv$section_titles$teaching[[lang]]` {#teaching}
+--------------------------------------------------------------------------------
+```{r, results='asis', echo=FALSE}
+for (t in cv$teaching) {
+  cat('<span style="font-weight: bold;">', t$type[[lang]], ':</span> ', t$details[[lang]], '<br>\n')
+}
+```
 
 Main
 ================================================================================
 
 Cyril Benhafed {#title}
 --------------------------------------------------------------------------------
-
-
 ```{r, results='asis', echo=FALSE}
-
 cat("### ", cv$title[[lang]], "\n\n")
-
 cat(cv$summary[[lang]])
 ```
 
-
-Professional Experience {data-icon=suitcase}
+`r cv$section_titles$experience[[lang]]` {data-icon=suitcase}
 --------------------------------------------------------------------------------
-
 ```{r, results='asis', echo=FALSE}
 for (exp in cv$experience) {
   cat("### ", exp$company, "\n")
   cat(exp$role[[lang]], "\n\n")
   cat(exp$period, "\n\n")
   
-  cat("::: concise\n")
+  cat("\n")
   for (d in exp$details[[lang]]) {
     cat("- ", d, "\n")
   }
-  cat(":::\n\n")
+  cat("\n\n")
 }
-
 ```
 
-
-
-Education {data-icon=graduation-cap data-concise=true}
+`r cv$section_titles$education[[lang]]` {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
-
 ```{r, results='asis', echo=FALSE}
 for (edu in cv$education) {
   cat("### ", edu$school, "\n")
@@ -107,6 +114,3 @@ for (edu in cv$education) {
   }
 }
 ```
-
-
-
