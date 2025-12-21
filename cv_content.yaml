@@ -27,17 +27,17 @@ title:
 
 summary:
   fr: >
-    Senior Data Scientist spécialisé en machine learning et MLOps. 8+ ans d'expérience
-    en analytics et modélisation prédictive (churn, scoring, recommandation). Expert
-    en industrialisation de workflows (Databricks, CI/CD) avec focus sur l'impact
-    business mesurable. Expérience de management d'équipe data/CRM. Passionné par
-    la transmission de connaissances (open-source, mentorat).
+    Senior Data Scientist avec 14 ans d'expérience en analytics et modélisation prédictive,
+    de l'ingénierie industrielle à l'industrialisation MLOps. Expert en déploiement de
+    modèles à impact mesurable (churn, scoring, recommandation) via Databricks et CI/CD.
+    Alliant expertise technique et vision business (pricing, économie). Expérience de
+    management d'équipe data/CRM. Passionné par la transmission de connaissances et le mentorat.
   en: >
-    Senior Data Scientist specializing in machine learning and MLOps. 8+ years in
-    analytics and predictive modeling (churn, scoring, recommender systems). Expert
-    in workflow industrialization (Databricks, CI/CD) with focus on measurable business
-    impact. Previous data/CRM team management experience. Passionate about knowledge
-    sharing (open-source, mentoring).
+    Senior Data Scientist with 14 years of experience in analytics and predictive modeling,
+    from industrial engineering to MLOps industrialization. Expert in deploying models with
+    measurable impact (churn, scoring, recommender) via Databricks and CI/CD. Combining
+    technical expertise with business acumen (pricing, economics). Data/CRM team management
+    experience. Passionate about knowledge sharing and mentoring.
 
 languages:
   - language:
@@ -131,11 +131,11 @@ experience:
     period: "2022 – Present"
     details:
       fr:
-        - "Conception et déploiement de modèles prédictifs (lead scoring, churn, recommandation) améliorant conversion et rétention."
+        - "Conception et déploiement de modèles prédictifs (lead scoring, recommandation) améliorant conversion et rétention."
         - "Industrialisation end-to-end : workflows LLM/NLP, intégration open data, automatisation CRM (Databricks, MLflow)."
         - "Implémentation bonnes pratiques MLOps : CI/CD, APIs, monitoring..."
       en:
-        - "Designed and deployed predictive models (lead scoring, churn, recommender) improving conversion and retention."
+        - "Designed and deployed predictive models (lead scoring, recommender) improving conversion and retention."
         - "End-to-end industrialization: LLM/NLP workflows, open data integration, CRM automation (Databricks, MLflow)."
         - "Implemented MLOps best practices: CI/CD, APIs, performance monitoring."
 
@@ -167,31 +167,33 @@ experience:
         - "Data-driven pricing strategies based on modeling and behavioral analysis."
         - "Deployment and monitoring with top management, direct revenue impact."
 
-  - company: "SNCF Connect & Tech"
+  - company: "SNCF Connect"
     role:
-      fr: "Business Analyst - Performance & Analytics"
-      en: "Business Analyst - Performance & Analytics"
+      fr: "Business Analyst"
+      en: "Business Analyst"
     period: "2016 – 2018"
     details:
       fr:
-        - "Pilotage analytique d'un portefeuille commercial de 4Md€ (KPIs ventes, web analytics)."
-        - "Modélisation financière et analyses prédictives pour décisions stratégiques."
+        - "Pilotage analytique multi-marchés (France + Europe) pour le 1er site e-commerce français (4Md€ de ventes)."
+        - "Analyses financières, web analytics et tendances ventes pour décisions stratégiques."
+        - "Initiatives cross-fonctionnelles (Marketing, Sales, IT) : optimisation flux data, implémentation outils."
       en:
-        - "Analytics lead for €4B commercial portfolio (sales KPIs, web analytics)."
-        - "Financial modeling and predictive analysis for strategic decisions."
+        - "Multi-market analytics lead (France + Europe) for France's #1 e-commerce site (€4B sales)."
+        - "Financial analysis, web analytics and sales trends for strategic decision-making."
+        - "Cross-functional initiatives (Marketing, Sales, IT): data flow optimization, tool implementation."
 
   - company: "Disneyland Paris"
     role:
-      fr: "Ingénieur Industriel - Analytics & Pricing"
-      en: "Industrial Engineer - Analytics & Pricing"
+      fr: "Ingénieur Industriel / Analyste Pricing"
+      en: "Industrial Engineer / Pricing Analyst"
     period: "2010 – 2016"
     details:
       fr:
-        - "Modèles prédictifs pour forecast opérationnel (centre d'appels) et optimisation pricing transport."
-        - "Analyses quantitatives pour décisions stratégiques pricing et optimisation opérationnelle."
+        - "Modèles prédictifs (forecast centre d'appels, optimisation workflows) et pricing strategies transport multi-marchés."
+        - "Management terrain et contribution projets IT Agile : intégration exigences transport dans architecture système."
       en:
-        - "Predictive models for operational forecasting (call center) and transport pricing optimization."
-        - "Quantitative analysis supporting strategic pricing and operational optimization."
+        - "Predictive models (call center forecasting, workflow optimization) and multi-market transport pricing strategies."
+        - "Field team management and Agile IT project: integrated transport requirements into system architecture."
 
 education:
   - school: "Toulouse INP-ENSIACET"
