@@ -73,8 +73,8 @@ skills:
       fr: "MLOps & Cloud"
       en: "MLOps & Cloud"
     items:
-      fr: ["Databricks (certif. en cours)", "MLflow", "CI/CD", "APIs", "Git"]
-      en: ["Databricks (certif. in progress)", "MLflow", "CI/CD", "APIs", "Git"]
+      fr: ["Databricks", "MLflow", "CI/CD", "APIs", "Git"]
+      en: ["Databricks", "MLflow", "CI/CD", "APIs", "Git"]
 
   data_science:
     label:
@@ -108,7 +108,7 @@ teaching:
       fr: "Interventions en école"
       en: "School talks"
     details:
-      fr: "Métiers de la tech, Fresque du Numérique"
+      fr: "Métiers de la tech, Tech 4 Good"
       en: "Tech careers, Digital Collage workshop"
   - type:
       fr: "Formations internes"
