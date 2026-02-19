@@ -98,10 +98,7 @@ certifications:
     year: "2023"
   - name: "Databricks Certified Machine Learning Associate"
     issuer: "Databricks"
-    year: "2025"
-    status:
-      fr: "(en cours)"
-      en: "(in progress)"
+    year: "2026"
 
 teaching:
   - type:
