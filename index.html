@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV – Cyril Benhafed</title>
+  <link rel="stylesheet" href="wrapper-styles.css">
+</head>
+<body>
+  <!-- Header with language switcher and PDF download -->
+  <header id="cv-header">
+    <div class="header-content">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="fr" onclick="switchLanguage('fr')">
+          <span class="flag">🇫🇷</span>
+          <span class="label">Français</span>
+        </button>
+        <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">
+          <span class="flag">🇬🇧</span>
+          <span class="label">English</span>
+        </button>
+      </div>
+      
+      <div class="actions">
+        <button class="pdf-btn" onclick="downloadPDF()">
+          <span class="icon">📄</span>
+          <span class="text" data-fr="Télécharger PDF" data-en="Download PDF">Télécharger PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CV iframe container -->
+  <div id="cv-container">
+    <iframe 
+      id="cv-frame" 
+      src="resume_fr.html" 
+      frameborder="0"
+      title="CV Cyril Benhafed"
+    ></iframe>
+  </div>
+
+  <script>
+    // Current language state
+    let currentLang = localStorage.getItem('cv-language') || 'fr';
+
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load saved language preference
+      if (currentLang === 'en') {
+        switchLanguage('en');
+      }
+    });
+
+    /**
+     * Switch between French and English
+     */
+    function switchLanguage(lang) {
+      if (lang !== 'fr' && lang !== 'en') return;
+      
+      currentLang = lang;
+      localStorage.setItem('cv-language', lang);
+      
+      // Update iframe source
+      const iframe = document.getElementById('cv-frame');
+      iframe.src = `resume_${lang}.html`;
+      
+      // Update button states
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        if (btn.dataset.lang === lang) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      
+      // Update PDF button text
+      const pdfText = document.querySelector('.pdf-btn .text');
+      if (pdfText) {
+        pdfText.textContent = pdfText.dataset[lang];
+      }
+    }
+
+    /**
+     * Download PDF in current language
+     */
+    function downloadPDF() {
+      const pdfFile = `resume_${currentLang}.pdf`;
+      
+      const link = document.createElement('a');
+      link.href = pdfFile;
+      link.download = `CV_Cyril_Benhafed_${currentLang.toUpperCase()}.pdf`;
+      link.style.display = 'none';
+      
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // Visual feedback
+      const btn = document.querySelector('.pdf-btn');
+      const originalText = btn.querySelector('.text').textContent;
+      
+      btn.querySelector('.text').textContent = currentLang === 'fr' ? 'Téléchargement...' : 'Downloading...';
+      btn.classList.add('downloading');
+      
+      setTimeout(() => {
+        btn.querySelector('.text').textContent = originalText;
+        btn.classList.remove('downloading');
+      }, 1500);
+    }
+
+    /**
+     * Print functionality - prints iframe content
+     */
+    function printCV() {
+      const iframe = document.getElementById('cv-frame');
+      iframe.contentWindow.print();
+    }
+
+    // Add keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+      // Ctrl/Cmd + P for print
+      if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+        e.preventDefault();
+        printCV();
+      }
+      
+      // Ctrl/Cmd + L to toggle language
+      if ((e.ctrlKey || e.metaKey) && e.key === 'l') {
+        e.preventDefault();
+        switchLanguage(currentLang === 'fr' ? 'en' : 'fr');
+      }
+    });
+  </script>
+</body>
+</html>

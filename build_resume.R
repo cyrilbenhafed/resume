@@ -1,62 +1,62 @@
-# build_resume.R
+# build_resume.R - Build CV with iframe wrapper
 
 # Ensure output folder exists
 if (!dir.exists("docs")) dir.create("docs")
 
 langs <- c("fr", "en")
 
+cat("🔨 Building CV in both languages...\n\n")
+
+# Step 1: Render HTML for each language
 for (lang in langs) {
-  # Render HTML
+  cat(paste0("  📄 Rendering HTML (", toupper(lang), ")...\n"))
+  
   rmarkdown::render(
     "resume.Rmd",
     output_file = paste0("docs/resume_", lang, ".html"),
     params = list(lang = lang),
-    envir = new.env()
-  )
-  
-  # Generate PDF
-  pagedown::chrome_print(
-    input = paste0("docs/resume_", lang, ".html"),
-    output = paste0("docs/resume_", lang, ".pdf")
+    envir = new.env(),
+    quiet = TRUE
   )
 }
 
-# Create a simple index.html with SVG flag icons
-index_html <- '
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Cyril Benhafed - Resume</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      margin-top: 10%;
-    }
-    a {
-      margin: 0 20px;
-      font-size: 1.5em;
-      text-decoration: none;
-    }
-    img.flag {
-      width: 30px;
-      vertical-align: middle;
-      margin-right: 8px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Cyril Benhafed - Resume</h1>
-  <p>
-    <a href="resume_fr.html">
-      <img class="flag" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1eb-1f1f7.svg" /> Français
-    </a>
-    <a href="resume_en.html">
-      <img class="flag" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1ec-1f1e7.svg" /> English
-    </a>
-  </p>
-</body>
-</html>
-'
-writeLines(index_html, "docs/index.html")
+# Step 2: Generate PDFs
+cat("\n📑 Generating PDFs...\n")
+for (lang in langs) {
+  cat(paste0("  📄 Generating PDF (", toupper(lang), ")...\n"))
+  
+  pagedown::chrome_print(
+    input = paste0("docs/resume_", lang, ".html"),
+    output = paste0("docs/resume_", lang, ".pdf"),
+    verbose = 0
+  )
+}
+
+# Step 3: Copy wrapper files to docs
+cat("\n📦 Copying wrapper files...\n")
+
+# Copy index.html
+if (file.exists("index.html")) {
+  file.copy("index.html", "docs/index.html", overwrite = TRUE)
+  cat("  ✓ index.html\n")
+} else {
+  cat("  ⚠️  index.html not found in root\n")
+}
+
+# Copy wrapper-styles.css
+if (file.exists("utils/wrapper-styles.css")) {
+  file.copy("utils/wrapper-styles.css", "docs/wrapper-styles.css", overwrite = TRUE)
+  cat("  ✓ wrapper-styles.css\n")
+} else {
+  cat("  ⚠️  utils/wrapper-styles.css not found\n")
+}
+
+cat("\n✅ Build complete!\n")
+cat("\n📂 Generated files:\n")
+cat("  • docs/resume_fr.html\n")
+cat("  • docs/resume_en.html\n")
+cat("  • docs/resume_fr.pdf\n")
+cat("  • docs/resume_en.pdf\n")
+cat("  ⭐ docs/index.html (MAIN FILE - wrapper with iframe)\n")
+cat("  • docs/wrapper-styles.css\n")
+cat("\n🌐 Open docs/index.html in your browser\n")
